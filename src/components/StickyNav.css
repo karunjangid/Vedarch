@@ -1,0 +1,135 @@
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(135deg, #0f1419, #1a2332);
+  color: #f1c40f; /* Bright Gold */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-family: 'Cinzel', serif;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(241, 196, 15, 0.4);
+  border-bottom: 2px solid #f1c40f;
+  backdrop-filter: blur(15px);
+  transition: background 0.5s ease;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .sticky-nav {
+    padding: 0.75rem 1rem;
+  }
+}
+
+.nav-logo {
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
+  color: #f1c40f;
+  text-shadow: 0 0 8px #f1c40f, 0 0 15px #f1c40f, 0 0 20px #f39c12;
+}
+
+.logo-text {
+  position: absolute;
+  left: 3rem; /* adjust to position after glyph */
+  transition: opacity 2s ease-in-out;
+  animation: glow 2s ease-in-out infinite alternate;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  color: #f1c40f;
+  text-shadow: 0 0 8px #f1c40f, 0 0 15px #f1c40f, 0 0 20px #f39c12;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f, 0 0 30px #f39c12;
+  }
+  to {
+    text-shadow: 0 0 20px #f1c40f, 0 0 30px #f1c40f, 0 0 40px #f39c12;
+  }
+}
+
+.glyph {
+  font-size: 2.5rem;
+  color: #f1c40f;
+  text-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f, 0 0 30px #f39c12;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    text-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f, 0 0 30px #f39c12;
+  }
+  50% {
+    text-shadow: 0 0 20px #f1c40f, 0 0 30px #f1c40f, 0 0 40px #f39c12;
+  }
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f1c40f;
+  text-shadow: 0 0 5px #f39c12;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Hide menu on mobile, show hamburger */
+  }
+}
+
+.nav-menu li a {
+  color: #f1c40f;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-menu li a:hover {
+  color: #ecf0f1; /* Light Gray */
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.hamburger {
+  display: none; /* For mobile, will add later */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #f1c40f;
+  border-radius: 2px;
+}
+
+

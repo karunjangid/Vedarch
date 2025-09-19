@@ -1,0 +1,87 @@
+.testimonial-carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Georgia', serif;
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.testimonial {
+  max-width: 600px;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: center;
+  position: relative;
+  padding: 1rem 2rem;
+  background: #f9f0e6;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+.quote-icon {
+  font-size: 4rem;
+  color: #d4af37;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  opacity: 0.3;
+  font-family: serif;
+}
+
+.rating {
+  margin-top: 0.5rem;
+}
+
+.star {
+  color: #d4af37;
+  font-size: 1.2rem;
+  margin: 0 2px;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #4b0082; /* deep amethyst */
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #b8860b;
+  user-select: none;
+  padding: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-btn:hover {
+  color: #ffd700;
+}
+
+.indicators {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #b8860b;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.indicator.active {
+  opacity: 1;
+  background-color: #ffd700;
+}

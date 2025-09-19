@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Hind:wght@400;600&display=swap');
+
+:root {
+  --spiritual-gold: #f1c40f;
+  --deep-saffron: #f39c12;
+  --sacred-purple: #8e44ad;
+  --divine-blue: #1a2332;
+  --cosmic-dark: #0f1419;
+  --ethereal-white: #ecf0f1;
+  --mystical-red: #e74c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hind', sans-serif;
+  background: linear-gradient(135deg, var(--cosmic-dark) 0%, var(--divine-blue) 50%, var(--cosmic-dark) 100%);
+  color: var(--ethereal-white);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+  color: var(--spiritual-gold);
+  text-shadow: 0 0 10px var(--spiritual-gold);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--deep-saffron);
+}

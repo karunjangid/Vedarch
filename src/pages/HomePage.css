@@ -1,0 +1,7 @@
+/* Global styles for homepage */
+.homepage {
+  background-color: #f5f5dc; /* Ivory */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
